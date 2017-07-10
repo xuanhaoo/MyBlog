@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<include file="Public:title"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/9.0.0/styles/vs.min.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/public.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css">
+	</head>
+	<body>
+	<include file="Public:top" />
+	<include file="Public:pag_css" />		
+		<!--nav-->
+		  <nav class="main-navigation">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12">
+	                    <div class="navbar-header">
+	                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <i class="fa fa-bars"></i>
+	                        </span>
+	                    </div>
+	                    <div class="collapse navbar-collapse" id="main-menu">
+	                        <ul class="menu">
+						    	
+						    	<li><a href="{:U('Index/index')}">首页</a></li>
+						    	<li><a href="{:U('Article/suibi')}">随笔文</a></li>
+								<li><a href="{:U('Article/mood')}">心情</a></li>	
+								<li role="presentation" class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">撸码<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{:U('Article/qian_duan')}">HTML</a></li>
+									<li><a href="{:U('Article/phpa')}">PHP</a></li>
+									<li class=""><a href="{:U('Article/mysql')}">MYSQL</a></li>
+								</ul>
+								</li>
+								<li class="nav-current"><a href="{:U('Article/game')}">电子竞技</a></li>
+								<li><a href="{:U('Liuyan/index')}">留言</a></li>
+								<li><a href="{:U('About/index')}">关于我</a></li> 	
+							</ul>   
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--nav-end-->
+		<!--文章列表-->
+	    <div class="container articleList">
+	    	<div class="row">
+	    		<div class="col-md-12">
+	    		<!--单个文章-->
+	    			<!-- <div class="article">
+	    				<div class="articleHeader">
+	    					<h1 class="articleTitle"><a href="#">测试一111</a></h1>
+	    				</div>
+	    				<div class="articleBody clearfix">
+	    									缩略图
+	    									<div class="articleThumb">
+	    										<a href=""><img src="http://vince.qiniudn.com/wp-content/uploads/2016/10/4564.jpg_wh1200.jpg?imageView2/2/w/400/h/200" srcset="" alt="Responsive image" class="img-responsive" width="400" height="200"/></a>
+	    									</div>
+	    									摘要
+	    									<div class="articleFeed">
+	    									    <p>前言
+	    										基于Bootstrap的单栏响应式主题simple更迭了一个大版本以及若干小版本，功能很少，但却实用，
+	    										现在发布最终版-V2.5，日志如下：
+	    										1、增加了搜索功能
+	    										2、修复了代码高亮功能(目前测试了pure highlight插件)
+	    										3:、为避免主题色彩同质化严重，因此我统一...</p>
+	    									</div>
+	    									tags
+	    									<div class="articleTags">
+	    										<ul><a href="http://vinceok.com/tag/simple" rel="tag">simple</a></ul>
+	    									</div>
+	    								</div>
+	    								<div class="articleFooter clearfix">
+	    									<ul class="articleStatu">
+	    										<li><i class="fa fa-calendar"></i>2016-10-04</li>
+	    										<li><i class="fa fa-eye"></i>10,302次浏览</li>
+	    									</ul>
+	    									<a href="" class="btn btn-readmore btn-info btn-md">阅读更多</a>
+	    								</div>				
+	    			</div> -->
+	    			<volist name="list" id="vo">
+	    			<!--单个文章-->
+	    			<div class="article">
+	    				<div class="articleHeader">
+	    					<h1 class="articleTitle"><a href="{:U('Article/game_detail', array('id'=>$vo['id'],'cate_id' => $vo['cate_id']))}">{$vo.title}</a></h1>
+	    				</div>
+	    				<div class="articleBody clearfix">
+						<!--缩略图-->
+						<div class="articleThumb">
+							<a href=""><img src="http://vince.qiniudn.com/wp-content/uploads/2016/10/4564.jpg_wh1200.jpg?imageView2/2/w/400/h/200" srcset="" alt="Responsive image" class="img-responsive" width="400" height="200"/></a>
+						</div>
+						<!--摘要-->
+						<div class="articleFeed">
+						    <p>{$vo.content|htmlspecialchars_decode|strip_tags|msubstr=###,0,140,'utf-8',true}</p>
+						</div>
+						<!--tags-->
+						<div class="articleTags">
+							<ul>
+							<foreach name="vo['remark']" item="re"><a href="" rel="tag">{$re}</a>
+							</foreach>	
+							</ul>
+						</div>
+					</div>
+					<div class="articleFooter clearfix">
+						<ul class="articleStatu">
+							<li><i class="fa fa-calendar"></i>{$vo.create_time|date="Y-m-d", ###}</li>
+							<li><i class="fa fa-eye"></i>{$vo.click}次浏览</li>
+						</ul>
+						<a href="{:U('Article/game_detail', array('id'=>$vo['id'],'cate_id' => $vo['cate_id']))}" class="btn btn-readmore btn-info btn-md">阅读更多</a>
+					</div>				
+	    			</div>
+	    			</volist>
+	    		</div>
+	    		<div class="pages" style=" text-align: center;">
+					{$page}
+				</div>
+	    	</div>
+	    </div>
+	   <include file="Public:footer"/>	
+	   <a href="#0" class="cd-top">Top</a>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/top.js"></script>
+	</body>
+</html>

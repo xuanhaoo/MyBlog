@@ -1,0 +1,61 @@
+body{
+	font: 400 16px/1.62 "Microsoft JhengHei", sans-serif;
+	color: #000000;
+	overflow: hidden;
+	background: white;
+
+}
+.mid-content {
+	text-align: center;
+	margin: 100px auto auto auto;
+	max-width: 580px;
+	padding: 0 20px;
+}
+.head-img {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.avatar {
+	border-radius: 64px;
+}
+h1{
+	font-weight: bold;
+	font-size: 26px;
+	color: #424242;
+	margin-bottom: 20px;
+}
+p{
+	font-size: 17px;
+	line-height: 27px;
+	margin: 15px 0;
+}
+.nav-title {
+	margin: 70px 0;
+}
+.nav {
+	padding-left: 8px;
+	margin-right: 10px;
+}
+.nav a{
+	font-size: 18px;
+	color: #535353;
+}
+.dropdown-menu a{
+	font-size: 14px;
+}
+.navbar {
+	background-color: rgba(0,0,0,0);
+	/*border-color: #40E0D0;*/
+}
+.navbar-default {
+	border-color: rgba(0,0,0,0);
+}
+.main-nav {
+	text-align: center;
+	background: #f4645f;
+}
+
+

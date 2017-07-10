@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<include file="Public:title"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/9.0.0/styles/vs.min.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/public.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css">
+	</head>
+	<body>
+	<include file="Public:top"/>	
+	<include file="Public:page_css"/>
+		<!--nav-->
+		  <nav class="main-navigation">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12">
+	                    <div class="navbar-header">
+	                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <i class="fa fa-bars"></i>
+	                        </span>
+	                    </div>
+	                    <div class="collapse navbar-collapse" id="main-menu">
+	                        <ul class="menu">
+	                        	<li><a href="{:U('Index/index')}">首页</a></li>
+						    	<li class=""><a href="{:U('Article/suibi')}">随笔文</a></li>
+								<li class="nav-current"><a href="{:U('Article/mood')}">心情</a></li>	
+								<li role="presentation" class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">撸码<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{:U('Article/qian_duan')}">HTML</a></li>
+									<li><a href="{:U('Article/phpa')}">PHP</a></li>
+									<li class=""><a href="{:U('Article/mysql')}">MYSQL</a></li>
+								</ul>
+								</li>
+								<li><a href="{:U('Article/game')}">电子竞技</a></li>
+								<li><a href="{:U('Liuyan/index')}">留言</a></li>
+								<li><a href="{:U('About/index')}">关于我</a></li> 	
+							</ul>   
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--nav-end-->
+		<!--心情列表-->
+	    <div class="container moodList">
+	    	<div class="row">
+	    		<!-- <div class="col-md-6">
+	    		单个心情
+	    			<div class="mood">
+	    				<div class="moodBody clearfix">
+	    					图片
+	    					<div class="moodThumb">
+	    						<img src="http://vince.qiniudn.com/wp-content/uploads/2016/10/4564.jpg_wh1200.jpg?imageView2/2/w/400/h/200">
+	    					</div>
+	    					<div class="moodFeed">
+	    						这里是心情记录。。。。
+	    						这里是心情记录。。。。
+	    						
+	    					</div>	    					
+	    				</div>
+	    				<div class="moodFooter clearfix">
+	    		    						<ul class="moodStatu">
+	    		    							<li><i class="fa fa-calendar"></i>2017 | </li>
+	    		    							<li><i class="fa fa-eye"></i>2次浏览 | </li>
+	    		    							<li><i class="fa fa-user"></i>评论</li>
+	    		    						</ul>
+	    		    					</div>
+	    			</div>	    			
+	    		</div> -->
+	    		<volist name="list" id="vo">
+	    			<div class="col-md-6">
+	    			<!--单个心情-->
+	    			<div class="mood">
+	    				<div class="moodBody clearfix">
+	    					<!--图片-->
+	    					<div class="moodThumb">
+	    						<img src="__ROOT__/Uploads/{$vo['image']|default='userImg.jpg'}">
+	    					</div>
+	    					<div class="moodFeed">
+	    						{$vo.content|htmlspecialchars_decode}
+	    					</div>	    					
+	    				</div>
+	    				<div class="moodFooter clearfix">
+    						<ul class="moodStatu">
+    							<li><i class="fa fa-calendar"></i>{$vo.create_time|date="Y-m-d",###}</li>
+    							<li><i class="fa fa-eye"></i>{$vo.click}次浏览 | </li>
+    							<li><i class="fa fa-user"></i>评论</li>
+    						</ul>
+    					</div>
+	    			</div>	    			
+	    		</div>
+	    		</volist>
+				
+	    	</div>
+	    	<div class="pages" style=" text-align: center;">
+					{$page}
+				</div>
+	    </div>
+	   <include file="Public:footer"/>	
+	    <a href="#0" class="cd-top">Top</a>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/top.js"></script>
+	</body>
+</html>

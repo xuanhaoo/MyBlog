@@ -1,0 +1,41 @@
+[ 2017-03-01T23:17:37+08:00 ] ::1 /MyBlog/Public/Admin/img/progress.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-03-01T23:17:43+08:00 ] ::1 /MyBlog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-03-01T23:17:49+08:00 ] ::1 /MyBlog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-03-01T23:17:52+08:00 ] ::1 /MyBlog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-03-01T23:18:23+08:00 ] ::1 /MyBlog/Public/Admin/js/plugins/layer/extend/layer.ext.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+ERR: 无法加载控制器:Public
+

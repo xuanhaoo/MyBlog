@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<include file="Public:title"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/9.0.0/styles/vs.min.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/public.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css">
+	</head>
+	<body>
+	<include file="Public:top"/>	
+		<!--nav-->
+		  <nav class="main-navigation">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12">
+	                    <div class="navbar-header">
+	                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <i class="fa fa-bars"></i>
+	                        </span>
+	                    </div>
+	                    <div class="collapse navbar-collapse" id="main-menu">
+	                         <ul class="menu">
+						    	<li><a href="{:U('Index/index')}">首页</a></li>
+						    	<li><a href="{:U('Article/suibi')}">随笔文</a></li>
+								<li><a href="{:U('Article/mood')}">心情</a></li>	
+								<li role="presentation" class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">撸码<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{:U('Article/qian_duan')}">HTML</a></li>
+									<li><a href="{:U('Article/phpa')}">PHP</a></li>
+									<li class=""><a href="{:U('Article/mysql')}">MYSQL</a></li>
+								</ul>
+								</li>
+								<li class="nav-current"><a href="{:U('Article/game')}">电子竞技</a></li>
+								<li><a href="{:U('Liuyan/index')}">留言</a></li>
+								<li><a href="{:U('About/index')}">关于我</a></li> 	
+							</ul>   
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--nav-end-->
+		<!--文章详细内容-->
+	   	<div class="articleDetail container">
+      		<div class="row">
+			<div class="col-md-12">
+				<div class="articleContent">
+					<!-- 标题 -->
+					<div class="title">{$article.title}</div>
+					<!-- 访问量 ...-->
+					<div class="secTitleBar">
+						<ul>
+							<li>分类：<a href="http://vinceok.com/category/javascript" rel="category tag">{$article.cate_name}</a></li>
+							<li>发表：{$article.create_time|date="Y-m-d", ###}</li>
+							<li>围观({$article.click})</li>
+							<!-- 获得评论数函数默认是wordpress自带的 -->
+							<li><a href="#comments">评论(10)(暂时功能还未开放)</a></li>
+						</ul>
+					</div>
+					<!-- 内容 -->
+					<div class="articleCon post_content">
+						{$article.content}
+					</div>
+						<!-- 标签 -->
+					<div class="articleTagsBox">
+						<ul><span>标签：</span> 
+						<foreach name="article['remark']" item="re">
+							<a href="" rel="tag" style="margin-left: 9px;">{$re}</a>
+						</foreach>
+						</ul>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<include file="Public:footer"/>	
+		<a href="#0" class="cd-top">Top</a>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/top/js"></script>
+	</body>
+</html>

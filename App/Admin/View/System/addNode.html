@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<!--<head>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/add-public.css">
+	<title>Document</title>
+</head>-->
+<include file="Public:header" />
+<include file="Public:page_css" />
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+	<include file="Public:nav" />
+	<form action="{:U('Admin/System/addNodeHandle')}" method="post">
+		<table>
+			<tr>
+				<td align="right"><if condition="$type eq 'ct'">
+				应用名：<input type="text" name="tg" value="{$gt}"></td>
+				</if>
+			</tr>
+					
+					<tr><if condition="$type eq 'at'"><td align="right">应用名：<input type="text" name="gt" value="{$gt}"></td></if></tr>	
+					<tr><if condition="$type eq 'at'"><td align="right">控制器名：<input type="text" name="ct" value="{$ct}"></td></if></tr>
+				
+			<tr>
+				<td align="right">{$type}名称：</td>
+				<td><input type="text" name="{$type}"></td>
+			</tr>
+			<tr>
+				<td align="right">{$type}描述：</td>
+				<td><input type="text" name="title"></td>
+			</tr>
+			<tr>
+				<td align="right">是否开启？</td>
+				<td><input type="radio" name="status" value="1" checked="checked">&nbsp;开启
+					<input type="radio" name="status" vaule="0">&nbsp;关闭</td>
+			</tr>
+			<tr>
+				<td align="right">排序</td>
+				<td><input type="text" name="sort" value="1"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="hidden" name="pid" value="{$pid}">
+				<input type="hidden" name="level" value="{$level}">
+				<input type="submit" value="确定添加"></td>
+			</tr>
+		</table>
+	</form>
+	<include file="Public:footer" />
+</body>
+</html>

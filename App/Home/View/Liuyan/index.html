@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<include file="Public:title"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/9.0.0/styles/vs.min.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/public.css">
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/style.css">
+	    <style type="text/css">
+	    	.btn-add{
+				float:right;
+				padding:8px 20px;
+				border:0;
+				border-radius:5px;
+				background:#34495e;/*main-color*/
+				box-shadow: 0 3px 10px rgba(0,0,0,0.06), 0 3px 10px rgba(0,0,0,0.13);
+				transition:all .1s;
+			}
+			.btn-add:hover{
+				background:#34495e;/*main-color*/
+				opacity:.8;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.09), 0 4px 10px rgba(0,0,0,0.17);
+			}
+			.youke-img {
+				left:1px;
+				margin-top: 8px;
+				border-radius: 50%;
+				float: left;
+			}
+			.liuyan_name {
+				width: 60px;
+			}
+			.my-img {
+				margin-right:3px;
+				margin-top: 8px;
+				border-radius: 50%;
+				float: right;
+			}
+			.liuyan {
+				margin-top: 6px;
+				border: 1px solid;
+				border-color: #E0E0E0;
+				border-radius: 3px;
+				min-height: 200px;
+			}
+			.content{
+			    width: 50%;
+			    min-height: 50px;
+			    position: relative;
+			    left: 80px;
+			    background-color: #e2eff9;
+			    border-radius: 20px;
+			    padding: 10px;
+			    margin-top: 10px;
+			    word-wrap: break-word;
+			}
+			 .content1 {
+			    width: 50%;
+			    min-height: 50px;
+			    position: relative;
+			    left: 40%;
+			    background-color: #CCCCFF;
+			    border-radius: 20px;
+			    padding: 10px;
+			    margin-top: 10px;
+			    word-wrap: break-word;
+			}
+			.content:hover{
+			    text-shadow: 0.1px 0.1px 0.1px;
+			    /*background-color: #00CCCC;*/
+			}
+			 
+			.content:after{
+			    content: "\00a0";
+			    display: block;
+			    position:absolute;
+			    top:15px;
+			    left: -20px;
+			    width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 10px 20px 10px 0px;
+			    border-color: transparent #e2eff9 transparent transparent;
+			}
+			.content1:after{
+			    content: "\00a0";
+			    display: block;
+			    position:absolute;
+			    top:15px;
+			    right: -20px;
+			    width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 10px 20px 10px 0px;
+			    border-color:   transparent transparent #CCCCFF transparent ;
+			}
+			.liuyan_time {
+				margin-top: 20px;
+				text-align: center;
+			}
+			.time_style {
+				background: #E8E8E8;
+				border-radius: 5px;
+			}
+			@media only screen and (max-width: 481px) {
+				/*.content {
+					width:;
+				}*/
+			}
+	    </style>
+	</head>
+	<body>
+	<include file="Public:top"/>	
+	<include file="Public:page_css" />
+		<!--nav-->
+		  <nav class="main-navigation">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12">
+	                    <div class="navbar-header">
+	                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+	                        <span class="sr-only">Toggle navigation</span>
+	                        <i class="fa fa-bars"></i>
+	                        </span>
+	                    </div>
+	                    <div class="collapse navbar-collapse" id="main-menu">
+	                       <ul class="menu">
+						    	<li><a href="{:U('Index/index')}">首页</a></li>
+						    	<li class=""><a href="{:U('Article/suibi')}">随笔文</a></li>
+								<li class=""><a href="{:U('Article/mood')}">心情</a></li>	
+								<li role="presentation" class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">撸码<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{:U('Article/qian_duan')}">HTML</a></li>
+									<li><a href="{:U('Article/phpa')}">PHP</a></li>
+									<li class=""><a href="{:U('Article/mysql')}">MYSQL</a></li>
+								</ul>
+								</li>
+								<li><a href="{:U('Article/game')}">电子竞技</a></li>
+								<li class="nav-current"><a href="{:U('Liuyan/index')}">留言</a></li>
+								<li><a href="{:U('About/index')}">关于我</a></li> 	
+							</ul>   
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+	    <!--nav-end-->
+		<!--留言-->
+		<div class="container liuyanList">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="liuyan-title">
+						<p>说些什么呢？</p>
+						<p>What do you want to say?</p>
+					</div>
+					<div class="liuyan-count">
+						<h4>共有{$count}条: “留言”</h4>
+						<div class="" style="float: right;margin-right: 20px;margin-top: -35px;"><a class="btn btn-add btn-info btn-md">留言</a></div>
+					</div>
+					<div class="lists">
+					<volist name="list" id="vo">
+						<div class="liuyan"> 
+							<div class="liuyanFeed">
+							<div class="youke-img">
+								<img src="__PUBLIC__/Home/images/liuyan.jpg" style="height: 50px;width: 50px;border-radius: 50%;">
+								<div class="liuyan_name">
+									<span>{$vo.ly_name}</span>
+								</div>
+							</div>
+							<div class="float">
+					            <div class="content">
+		           					{$vo.ly_content}
+					            </div>
+					        </div>
+					        <if condition="$vo.status eq 1">
+					        	 <div class="" style="margin-bottom: 13px;">
+									<div class="my-img">
+										<img src="__PUBLIC__/Home/images/head.jpg" style="height: 50px;width: 50px;border-radius: 50%">
+										<div class="liuyan_name">博主xh</div>
+									</div>
+									<div class="float">
+							            <div class="content1">
+							                {$vo.reply|htmlspecialchars_decode}
+							            </div>
+							        </div>
+								</div>
+					        </if>
+					       <div class="liuyan_time">
+					       	<span class="time_style">
+					       		{$vo.ly_time|date="Y-m-d h:i:s", ###}
+					       	</span>
+					       </div>
+							</div>
+						</div>
+					</volist>
+				<div class="pages" style=" text-align: center;">
+					{$page}
+				</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		<!--发表新的留言-->
+		<div class="liuyan-layer" style="display: none;">
+			<div class="container liuyan-form" style="width: 550px;margin-left: 10px;">
+			<div class="row">
+				<div class="col-md-12">
+					<form role="form" class="layui-form">
+						<div class="layui-form-item layui-form-text">
+						    <label class="layui-form-label">留言内容</label>
+						    <div class="layui-input-block">
+						      <textarea name="content" placeholder="请输入内容" class="layui-textarea"></textarea>
+						    </div>
+						 </div>
+						 <div class="layui-form-item">
+						    <label class="layui-form-label">昵称</label>
+						    <div class="layui-input-block">
+						      <input type="text" name="ly_name" required  lay-verify="required" placeholder="请输入昵称" autocomplete="off" class="layui-input">
+						    </div>
+						 </div>
+						 <div class="layui-form-item">
+						    <label class="layui-form-label">站点名</label>
+						    <div class="layui-input-block">
+						      <input type="text" name="web_site"  placeholder="请输入站点名（可不填）" autocomplete="off" class="layui-input">
+						    </div>
+						 </div>
+						  <div class="layui-form-item">
+						    <div class="layui-input-block">
+						      <button class="layui-btn" lay-submit lay-filter="addliuyan">立即提交</button>
+						      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+						    </div>
+						 </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+	   
+	    <include file="Public:footer"/>	
+	    <a href="#0" class="cd-top">Top</a>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/js/top.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/Home/layui/layui.js"></script>
+		<script type="text/javascript">
+			var addhandleurl = "{:U('Home/Liuyan/new_liuyan')}";
+		</script>
+		<script type="text/javascript">
+			layui.use(['layer','form'], function() {
+				var $ = layui.jquery,
+				form = layui.form(),
+				layer = layui.layer;
+
+				$('.btn-add').click(function() {
+					layer.open({
+						title: '留言',
+						type: 1,
+						area: ['580px', '450px'],
+						content: $('.liuyan-layer'),
+					});
+					
+				});
+				form.on('submit(addliuyan)', function(rec) {
+					$.ajax({
+					url: addhandleurl,
+					type: 'POST',
+					data: rec.field,
+					error: function(request){
+						layer.msg("请求服务器超时", {time: 1000, icon: 5});
+					},
+					success: function(data){
+						if (data.success){
+							layer.msg('提交成功', {
+								time: 1000
+							}, function(){
+								layer.close();
+								location.reload();
+							});
+						}else{
+							layer.msg(data.msg, {
+								time: 1000
+							});
+						}
+					}
+				});
+					return false;
+				});
+
+			});
+		</script>
+	</body>
+</html>

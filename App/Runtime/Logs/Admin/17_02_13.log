@@ -1,0 +1,2899 @@
+[ 2017-02-13T10:25:48+08:00 ] ::1 /MyBlog/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2017-02-13T10:25:56+08:00 ] ::1 /MyBlog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `myblog_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `myblog_user` SET `last_loginip`='0.0.0.0',`last_logintime`='1486952756' WHERE `id` = 1 [ RunTime:0.0552s ]
+
+[ 2017-02-13T10:25:56+08:00 ] ::1 /MyBlog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0154s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2017-02-13T11:47:48+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-02-13T11:47:51+08:00 ] ::1 /MyBlog/Admin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e669bccb9b48de10321c04949ff8667c.php 第 151 行.
+NOTIC: [8] Undefined variable: detail D:\www\MyBlog\App\Runtime\Cache\Admin\e669bccb9b48de10321c04949ff8667c.php 第 238 行.
+NOTIC: [8] Undefined variable: nowtime D:\www\MyBlog\App\Runtime\Cache\Admin\e669bccb9b48de10321c04949ff8667c.php 第 347 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-02-13T11:47:52+08:00 ] ::1 /MyBlog/Admin/Article/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002081s ]
+
+[ 2017-02-13T11:49:10+08:00 ] ::1 /MyBlog/Admin/Article/addHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0026s ]
+SQL: INSERT INTO `myblog_article` (`title`,`cate_id`,`remark`,`content`,`or_top`,`author`,`create_time`,`modify_time`,`click`,`from`,`author_ip`) VALUES ('测试文章二','1','随笔','<blockquote><p><em><span style=\"text-decoration: none;\">这是测试文章二</span></em></p></blockquote><p><span style=\"text-decoration: none;\">&nbsp; 今天看看，还可以。</span><em><span style=\"text-decoration: none;\"><br/></span></em></p>','0','梁轩豪','1486957750','1486957750','1','1','0.0.0.0') [ RunTime:0.0538s ]
+
+[ 2017-02-13T11:49:11+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2017-02-13T14:59:10+08:00 ] ::1 /MyBlog/Admin/Liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_liuyan` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_liuyan` ORDER BY ly_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\685d5098d176ea357592d6a5719ce703.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2017-02-13T14:59:12+08:00 ] ::1 /MyBlog/Admin/Liuyan/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `myblog_liuyan` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\07215f670aeb5d7c0444d352ce6b6f04.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-02-13T15:07:03+08:00 ] ::1 /MyBlog/Admin/Liuyan/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_liuyan` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\07215f670aeb5d7c0444d352ce6b6f04.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2017-02-13T15:07:18+08:00 ] ::1 /MyBlog/Admin/Liuyan/editHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0006s ]
+SQL: UPDATE `myblog_liuyan` SET `reply`='<p>&nbsp;测试回复。。</p>',`re_time`='1486969637',`re_name`='梁轩豪',`status`='1' WHERE ( id = 1 ) [ RunTime:0.1409s ]
+
+[ 2017-02-13T15:07:19+08:00 ] ::1 /MyBlog/Admin/Liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_liuyan` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_liuyan` ORDER BY ly_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\685d5098d176ea357592d6a5719ce703.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-02-13T15:16:57+08:00 ] ::1 /MyBlog/Admin/Liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_liuyan` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_liuyan` ORDER BY ly_time desc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\685d5098d176ea357592d6a5719ce703.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2017-02-13T15:19:19+08:00 ] ::1 /MyBlog/Admin/Liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_liuyan` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_liuyan` ORDER BY ly_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\685d5098d176ea357592d6a5719ce703.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-02-13T15:26:45+08:00 ] ::1 /MyBlog/Admin/Site/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\09f7be7ed786ea302e629d96d0043604.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2017-02-13T20:17:13+08:00 ] ::1 /MyBlog/Admin/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2017-02-13T20:17:20+08:00 ] ::1 /MyBlog/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `myblog_user` WHERE `username` = 'admin' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `myblog_user` SET `last_loginip`='0.0.0.0',`last_logintime`='1486988240' WHERE `id` = 1 [ RunTime:0.0604s ]
+
+[ 2017-02-13T20:17:20+08:00 ] ::1 /MyBlog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2017-02-13T20:17:25+08:00 ] ::1 /MyBlog/Admin/System/addNode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2017-02-13T20:17:34+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000549s ]
+
+[ 2017-02-13T20:17:41+08:00 ] ::1 /MyBlog/Admin/System/addNode/pid/1/level/2/gt/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-02-13T20:17:52+08:00 ] ::1 /MyBlog/Admin/System/addNodeHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: INSERT INTO `myblog_node` (`ct`,`title`,`status`,`sort`,`pid`,`level`) VALUES ('Links','链接','1','1','1','2') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-02-13T20:17:54+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2017-02-13T20:18:17+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2017-02-13T20:18:18+08:00 ] ::1 /MyBlog/Admin/System/addNode/pid/40/level/3/gt/Admin/ct/Links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-02-13T20:18:30+08:00 ] ::1 /MyBlog/Admin/System/addNodeHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: INSERT INTO `myblog_node` (`gt`,`ct`,`at`,`title`,`status`,`sort`,`pid`,`level`) VALUES ('Admin','Links','index','链接管理','1','1','40','3') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-02-13T20:18:31+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-02-13T20:18:33+08:00 ] ::1 /MyBlog/Admin/System/addNode/pid/40/level/3/gt/Admin/ct/Links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-02-13T20:18:43+08:00 ] ::1 /MyBlog/Admin/System/addNodeHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: INSERT INTO `myblog_node` (`gt`,`ct`,`at`,`title`,`status`,`sort`,`pid`,`level`) VALUES ('Admin','Links','add','添加链接','1','1','40','3') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-02-13T20:18:44+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-02-13T20:18:46+08:00 ] ::1 /MyBlog/Admin/System/addNode/pid/40/level/3/gt/Admin/ct/Links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001217s ]
+
+[ 2017-02-13T20:19:01+08:00 ] ::1 /MyBlog/Admin/System/addNodeHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: INSERT INTO `myblog_node` (`gt`,`ct`,`at`,`title`,`status`,`sort`,`pid`,`level`) VALUES ('Admin','Links','edit','编辑链接','1','1','40','3') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-02-13T20:19:02+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-02-13T20:19:04+08:00 ] ::1 /MyBlog/Admin/System/addNode/pid/40/level/3/gt/Admin/ct/Links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\a2d3b4cd45447efd6c2f7b4b2b5901ab.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2017-02-13T20:19:14+08:00 ] ::1 /MyBlog/Admin/System/addNodeHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: INSERT INTO `myblog_node` (`gt`,`ct`,`at`,`title`,`status`,`sort`,`pid`,`level`) VALUES ('Admin','Links','del','删除链接','1','1','40','3') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-02-13T20:19:15+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2017-02-13T20:21:39+08:00 ] ::1 /MyBlog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-02-13T20:22:04+08:00 ] ::1 /MyBlog/Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-02-13T20:22:06+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-02-13T20:22:14+08:00 ] ::1 /MyBlog/Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\48fad9e24618a659080a574d86172b31.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-02-13T20:22:16+08:00 ] ::1 /MyBlog/Admin/System/setting_access/id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `myblog_access` [ RunTime:0.0394s ]
+SQL: SELECT `node_id` FROM `myblog_access` WHERE ( role_id = 4 )  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`pid`,`menuflag` FROM `myblog_node`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: ids D:\www\MyBlog\App\Admin\Controller\SystemController.class.php 第 322 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\64aee5c684842481902510c7cc085e81.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-02-13T20:22:22+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2017-02-13T20:22:24+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e1e75dacc9b9afe535d40531a7a87917.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+
+[ 2017-02-13T20:23:12+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988592','1486988592')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988592','1486988592')
+
+[ 2017-02-13T20:23:17+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988597','1486988597')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988597','1486988597')
+
+[ 2017-02-13T20:24:57+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0019s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988697','1486988697')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988697','1486988697')
+
+[ 2017-02-13T20:24:58+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0021s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988698','1486988698')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988698','1486988698')
+
+[ 2017-02-13T20:24:58+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0018s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988698','1486988698')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988698','1486988698')
+
+[ 2017-02-13T20:24:59+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0018s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+
+[ 2017-02-13T20:24:59+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0019s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+
+[ 2017-02-13T20:24:59+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0026s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+
+[ 2017-02-13T20:24:59+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0020s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988699','1486988699')
+
+[ 2017-02-13T20:25:00+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0021s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+
+[ 2017-02-13T20:25:00+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+
+[ 2017-02-13T20:25:00+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0017s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+
+[ 2017-02-13T20:25:00+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0021s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+
+[ 2017-02-13T20:25:00+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988700','1486988700')
+
+[ 2017-02-13T20:25:03+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0008s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+
+[ 2017-02-13T20:25:03+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+
+[ 2017-02-13T20:25:03+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+
+[ 2017-02-13T20:25:03+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+
+[ 2017-02-13T20:25:03+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988703','1486988703')
+
+[ 2017-02-13T20:25:04+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0007s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988704','1486988704')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988704','1486988704')
+
+[ 2017-02-13T20:26:34+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988794','1486988794')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988794','1486988794')
+
+[ 2017-02-13T20:27:34+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e1e75dacc9b9afe535d40531a7a87917.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-02-13T20:28:14+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988894','1486988894')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988894','1486988894')
+
+[ 2017-02-13T20:28:15+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0009s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988895','1486988895')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988895','1486988895')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0008s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:16+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988896','1486988896')
+
+[ 2017-02-13T20:28:17+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988897','1486988897')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988897','1486988897')
+
+[ 2017-02-13T20:28:17+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0007s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988897','1486988897')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486988897','1486988897')
+
+[ 2017-02-13T20:29:44+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e1e75dacc9b9afe535d40531a7a87917.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-02-13T20:30:09+08:00 ] ::1 /MyBlog/Admin/Links/addHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0009s ]
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486989009','1486989009')
+ERR: 1364:Field 'id' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486989009','1486989009')
+
+[ 2017-02-13T20:32:26+08:00 ] ::1 /MyBlog/Admin/Links/addHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0020s ]
+SQL: INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('WordPress主题','恩，国内最好用的WordPress主题下载站','http://www.2zzt.com/','1','1486989146','1486989146') [ RunTime:0.0564s ]
+
+[ 2017-02-13T20:32:28+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-02-13T20:33:34+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+ERR: Think\Controller:diplay方法不存在！
+
+[ 2017-02-13T20:33:46+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-02-13T20:33:47+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e1e75dacc9b9afe535d40531a7a87917.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2017-02-13T20:34:30+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0019s ]
+SQL: INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('百度一下','','http://www.摆渡.com/','1','1486989270','1486989270') [ RunTime:0.0810s ]
+
+[ 2017-02-13T20:34:59+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0031s ]
+SQL: INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('百度一下','百度最好的中文搜索引擎','http://www.baidu.com/','1','1486989299','1486989299') [ RunTime:0.0826s ]
+
+[ 2017-02-13T20:35:00+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001519s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2017-02-13T20:35:17+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2017-02-13T20:35:19+08:00 ] ::1 /MyBlog/Admin/Links/edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `myblog_links` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\23c8d559ba1089068edf34f80000249a.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-02-13T20:35:32+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e1e75dacc9b9afe535d40531a7a87917.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2017-02-13T20:35:39+08:00 ] ::1 /MyBlog/Admin/Links/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0008s ]
+SQL: INSERT INTO `myblog_links` (`name`,`remark`,`url`,`status`,`add_time`,`update_time`) VALUES ('111','111','111','1','1486989339','1486989339') [ RunTime:0.0849s ]
+
+[ 2017-02-13T20:35:40+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-02-13T20:35:43+08:00 ] ::1 /MyBlog/Admin/Links/del/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0045s ]
+SQL: DELETE FROM `myblog_links` WHERE `id` = 4 [ RunTime:0.1479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000549s ]
+NOTIC: [8] Undefined variable: p D:\www\MyBlog\App\Admin\Controller\LinksController.class.php 第 122 行.
+
+[ 2017-02-13T20:35:43+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2017-02-13T20:42:35+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2017-02-13T20:42:38+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2017-02-13T20:44:01+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2017-02-13T20:44:04+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2017-02-13T20:44:11+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2017-02-13T20:44:12+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2017-02-13T20:44:14+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-02-13T20:44:16+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2017-02-13T20:44:17+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2017-02-13T20:44:18+08:00 ] ::1 /MyBlog/Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_role` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\48fad9e24618a659080a574d86172b31.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001253s ]
+
+[ 2017-02-13T20:44:19+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-02-13T20:48:15+08:00 ] ::1 /MyBlog/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9df924d9a2d217daa77a359c5bee0c33.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2017-02-13T20:48:20+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015291s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2017-02-13T20:48:22+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-02-13T20:48:24+08:00 ] ::1 /MyBlog/Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_role` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\48fad9e24618a659080a574d86172b31.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2017-02-13T20:48:25+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2017-02-13T20:48:25+08:00 ] ::1 /MyBlog/Admin/System/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`gt`,`ct`,`at`,`pid` FROM `myblog_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\04c20130a76508dc1e1f53909278cbb5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2017-02-13T20:48:26+08:00 ] ::1 /MyBlog/Admin/System/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_user` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_user` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_role`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e6ebfbe50ff11fcc9e1d5236f5b98164.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2017-02-13T20:48:27+08:00 ] ::1 /MyBlog/Admin/System/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `myblog_role` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_role` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_role` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\48fad9e24618a659080a574d86172b31.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2017-02-13T20:48:28+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2017-02-13T20:48:29+08:00 ] ::1 /MyBlog/Admin/Article/indextype.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article_cate` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_article_cate` LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9ddbdc19835b9f047a52a43d27ae1923.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2017-02-13T20:48:30+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2017-02-13T20:48:32+08:00 ] ::1 /MyBlog/Admin/Liuyan/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_liuyan` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_liuyan` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_liuyan` ORDER BY ly_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\685d5098d176ea357592d6a5719ce703.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-02-13T20:48:34+08:00 ] ::1 /MyBlog/Admin/Site/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\09f7be7ed786ea302e629d96d0043604.php 第 147 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2017-02-13T20:48:35+08:00 ] ::1 /MyBlog/Admin/Links/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_links` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_links` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `myblog_links` ORDER BY id desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 149 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+NOTIC: [8] Undefined index: orderby D:\www\MyBlog\App\Runtime\Cache\Admin\e7749917abb40bbd19ce11bc1ac1131b.php 第 228 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-02-13T20:48:37+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-02-13T20:48:45+08:00 ] ::1 /MyBlog/Admin/Article/indextype.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article_cate` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_article_cate` LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9ddbdc19835b9f047a52a43d27ae1923.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-02-13T20:48:47+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2017-02-13T20:48:49+08:00 ] ::1 /MyBlog/Admin/Article/indextype.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article_cate` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `myblog_article_cate` LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\9ddbdc19835b9f047a52a43d27ae1923.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001074s ]
+
+[ 2017-02-13T20:48:50+08:00 ] ::1 /MyBlog/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: menu_list D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\MyBlog\App\Admin\Controller\CommonController.class.php 第 81 行.
+SQL: SHOW COLUMNS FROM `myblog_node` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `myblog_node` WHERE `menuflag` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `myblog_article` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `myblog_article_cate` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `myblog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `myblog_article` ORDER BY create_time desc LIMIT 10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `myblog_article_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: Os D:\www\MyBlog\App\Runtime\Cache\Admin\ac492b5605bffa8cac27c5e0dc599b32.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
